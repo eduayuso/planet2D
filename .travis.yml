@@ -1,5 +1,5 @@
 language: android
 dist: trusty
-install: ant deps
+install: deps
 script:
   - ./gradlew tests:test
