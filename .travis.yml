@@ -1,6 +1,6 @@
 language: kotlin
 jdk: oraclejdk8
-sudo: required
+sudo: true
 os: linux
 
 script:
