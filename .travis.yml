@@ -3,4 +3,4 @@ jdk: oraclejdk8
 sudo: required
 
 script:
-  - chmod +x ./gradlew build connectedCheck
+  - ./gradlew build connectedCheck
