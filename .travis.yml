@@ -1,7 +1,2 @@
 language: kotlin
 jdk: oraclejdk8
-sudo: true
-os: linux
-
-script:
-  ./gradlew tests:test
