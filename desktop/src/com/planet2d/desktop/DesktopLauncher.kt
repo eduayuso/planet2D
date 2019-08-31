@@ -1,6 +1,5 @@
 package com.planet2d.desktop
 
-import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
 import com.planet2d.Config
