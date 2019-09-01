@@ -1,0 +1,17 @@
+{
+"tree-45": {
+	"width": 229,
+	"height": 224,
+	"branches": [
+		{
+			"name": "branch-01",
+			"file": "branch-01.png",
+			"x": 0,
+			"y": 0,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		}
+	]
+}
+}

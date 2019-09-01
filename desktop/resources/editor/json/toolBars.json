@@ -1,0 +1,162 @@
+{
+	mainToolBar: {
+		width: fill,
+		height: 28,
+		items: [
+			{
+				class: ImageActor,
+				fileName: "ui/app-icon-mini.png",
+				padLeft: 8,
+				padRight: 8
+			},
+			{
+				class: Button
+				text: "File",
+				menu: [
+					{
+						icon: "new-project",
+						text: "New Project...",
+						action: "newProject"
+					},
+					{
+						icon: "open-project",
+						text: "Open Project...",
+						action: "openProject"
+					},
+					{
+						icon: "save-project",
+						text: "Save Project",
+						action: "saveProject"
+					},
+					{
+						icon: "save-project",
+						text: "Save Project As",
+						action: "saveProjectAs"
+					},
+					{
+						icon: "close-project",
+						text: "Close Project",
+						action: "closeProject"
+					},
+					{
+						icon: "close",
+						text: "Exit",
+						action: "closeEditor"
+					}
+				]
+			},
+			{
+				class: Button
+				text: "Edit",
+				menu: [
+					{
+						icon: undo,
+						text: "Undo",
+						action: "undoAction"
+					},
+					{
+						icon: redo,
+						text: "Redo",
+						action: "redoAction"
+					},
+					{
+						icon: empty,
+						text: "Select All",
+						action: "redoAction"
+					}
+				]
+			},
+			{
+				class: Button
+				text: "Window",
+				menu: [
+					{
+						icon: empty,
+						text: "Preferences",
+						action: "createNewFile"
+					}
+				]
+			},
+			{
+				class: Button
+				text: "Help",
+				menu: [
+					{
+						icon: empty,
+						text: "Index",
+						action: "helpIndex"
+					},
+					{
+						icon: empty,
+						text: "About Jeviathor Game Studio",
+						action: "showAbout"
+					}
+				]
+			},
+			{
+				class: Button
+				text: "",
+				style: "new-project",
+				align: left,
+				padLeft: 50,
+				padRight: 0,
+				action: "newProject"
+			},
+			{
+				class: Button
+				text: "",
+				style: "open-project",
+				align: left,
+				padLeft: 6,
+				padRight: 0,
+				action: "openProject"
+			},
+			{
+				class: Button
+				text: "",
+				style: "save-project",
+				align: left,
+				padLeft: 6,
+				padRight: 0,
+				action: "saveProject"
+			},
+			{
+				class: Button
+				text: "",
+				style: "undo",
+				align: left,
+				padLeft: 18,
+				padRight: 0,
+				action: "undo"
+			},
+			{
+				class: Button
+				text: "",
+				style: "redo",
+				align: left,
+				padLeft: 6,
+				padRight: 0,
+				action: "redo"
+			},
+			{
+				class: Button,
+				text: "",
+				style: "minimize",
+				align: right,
+				padLeft: 0,
+				padRight: 2,
+				expandX: true,
+				action: "minimizeWindow"
+			},
+			{
+				class: Button,
+				text: "",
+				style: "close",
+				align: right,
+				padLeft: 0,
+				padRight: 6,
+				action: "closeEditor"
+			}
+		]
+	}
+}

@@ -1,7 +1,9 @@
 package com.planet2d.desktop
 
+import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
+import com.badlogic.gdx.backends.lwjgl.LwjglFrame
 import com.planet2d.Config
 import com.planet2d.editor.Editor
 import com.planet2d.game.Game
@@ -22,8 +24,11 @@ object DesktopLauncher {
     private fun initEditor() {
 
         val lwjglConfig = LwjglApplicationConfiguration()
-        lwjglConfig.width = LwjglApplicationConfiguration.getDesktopDisplayMode().width;
-        lwjglConfig.height = LwjglApplicationConfiguration.getDesktopDisplayMode().height;
+        lwjglConfig.width = LwjglApplicationConfiguration.getDesktopDisplayMode().width
+        lwjglConfig.height = LwjglApplicationConfiguration.getDesktopDisplayMode().height
+        lwjglConfig.fullscreen = true
+        lwjglConfig.vSyncEnabled = true
+        System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         LwjglApplication(Editor(), lwjglConfig)
     }
 
@@ -31,7 +36,6 @@ object DesktopLauncher {
 
         val lwjglConfig = LwjglApplicationConfiguration()
         lwjglConfig.fullscreen = true
-
         LwjglApplication(Game(), lwjglConfig)
     }
 }
