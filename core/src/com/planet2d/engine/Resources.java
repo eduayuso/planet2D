@@ -91,7 +91,7 @@ public class Resources {
 		unload(projectName + "/textures", fileNames, "png", Texture.class);
 	}
 	
-	public static void loadJPGTextures(String[] fileNames) {
+	public static void loadJPGTextures(String... fileNames) {
 		
 		load(projectName + "/textures", fileNames, "jpg", Texture.class);
 	}

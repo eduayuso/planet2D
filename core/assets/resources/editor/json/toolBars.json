@@ -5,7 +5,7 @@
 		items: [
 			{
 				class: ImageActor,
-				fileName: "ui/app-icon-mini.png",
+				fileName: "ui/app-icon-32.png",
 				padLeft: 8,
 				padRight: 8
 			},
@@ -148,6 +148,15 @@
 				expandX: true,
 				action: "minimizeWindow"
 			},
+            {
+                class: Button,
+                text: "",
+                style: "minimize",
+                align: right,
+                padLeft: 0,
+                padRight: 2,
+                action: "maximizeWindow"
+            },
 			{
 				class: Button,
 				text: "",

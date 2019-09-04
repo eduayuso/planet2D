@@ -1,5 +1,7 @@
 package com.planet2d.editor.ui;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.JsonValue;
@@ -88,5 +90,10 @@ public class Button extends com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton {
 			Actions.invokeAction(this.actionName);
 		}
 	}
-	
+
+	@Override
+    public void draw (Batch batch, float parentAlpha) {
+
+	    super.draw(batch, parentAlpha);
+    }
 }

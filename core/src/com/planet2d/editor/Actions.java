@@ -24,6 +24,10 @@ public class Actions {
 			Gdx.app.error("error invocando metodo " + actionName, e.toString());
 		}
 	}
+
+	public static void newProject() {
+        Editor.mainWindow.restoreWindow();
+    }
 	
 	public static void newProjectDialog() {
 		
@@ -39,7 +43,17 @@ public class Actions {
 
 		FileUtils.importImageFiles();
 	}
-	
+
+	public static void minimizeWindow() {
+
+	    Editor.mainWindow.restoreWindow();
+    }
+
+    public static void maximizeWindow() {
+
+        Editor.mainWindow.maximizeWindow();
+    }
+
 	public static void closeEditor() {
 		
 		if (Editor.currentPage != null) Editor.currentPage.showCloseProjectDialog();

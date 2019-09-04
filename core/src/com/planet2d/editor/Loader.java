@@ -20,8 +20,8 @@ public class Loader {
 		Resources.loadPNGTextures(
 			"ui/open-detail",
 			"ui/close-detail",
-			"ui/app-icon-mini",
-			"ui/logo",
+			"ui/app-icon-32",
+			"ui/logo3",
 			"ui/logo2",
 			"ui/actor-origin",
 			"ui/frame-corner",

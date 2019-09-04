@@ -18,6 +18,9 @@ import com.planet2d.engine.actors.SpriteActor;
 import com.planet2d.engine.ui.Dialog;
 
 public class WelcomePage extends Page {
+
+    private final static int WIDTH = 768;
+    private final static int HEIGHT = 736;
 	
 	private Panel mainPanel1;
 	private ItemsPanel projectsPanel;
@@ -46,12 +49,12 @@ public class WelcomePage extends Page {
 	}
 
 	private Panel createMainPanel1() {
+
+		Panel panel = new Panel("panel-white", WIDTH, HEIGHT);
 		
-		Panel panel = new Panel("panel-white", 634, 492);
-		
-		SpriteActor logo1 = new SpriteActor("editor", "ui/logo.png");
+		SpriteActor logo1 = new SpriteActor("editor", "ui/logo3.png");
 		SpriteActor logo2 = new SpriteActor("editor", "ui/logo2.png");
-		this.projectsPanel = new ProjectsItemsPanel(this, "My projects", 302, 375);
+		this.projectsPanel = new ProjectsItemsPanel(this, "My projects", WIDTH/2-20, 375);
 		this.filesPanel1 = this.createFilesPanel1();
 
 		logo1.setPosition(panel.getWidth()/2f - logo1.getWidth()/2f, panel.getHeight() - logo1.getHeight() - 18);
@@ -131,7 +134,7 @@ public class WelcomePage extends Page {
 
 	private FilesPanel createFilesPanel1() {
 		
-		FilesPanel panel = new FilesPanel(302, 375);
+		FilesPanel panel = new FilesPanel(WIDTH/2 - 10, 375);
 		
 		return panel;
 	}

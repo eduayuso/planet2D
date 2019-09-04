@@ -1,5 +1,9 @@
 package com.planet2d.editor;
 
+import com.badlogic.gdx.Graphics;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Graphics;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window;
+import com.badlogic.gdx.graphics.Pixmap;
 import com.planet2d.engine.Engine;
 import com.planet2d.editor.graphics.ActorRenderer;
 import com.planet2d.editor.history.History;
@@ -7,6 +11,7 @@ import com.planet2d.editor.layouts.CanvasLayout;
 import com.planet2d.editor.layouts.WindowLayout;
 import com.planet2d.editor.listeners.UserInputListener;
 import com.planet2d.editor.pages.ProjectPage;
+import com.planet2d.engine.config.Config;
 import com.planet2d.engine.ui.Styles;
 import com.planet2d.engine.ui.Cursors;
 
@@ -20,6 +25,7 @@ public class Editor extends Engine {
 	public static ProjectPage currentPage;
 	private Cursors cursors;
 	private History history;
+	public static Lwjgl3Window mainWindow;
 	
 	@Override
 	public void create() {
@@ -27,7 +33,21 @@ public class Editor extends Engine {
 		super.create();
 		this.createCursors();
 		this.createHistory();
-	}
+
+        Graphics.Monitor currMonitor = Gdx.graphics.getMonitor();
+       // Graphics.DisplayMode displayMode = Gdx.graphics.getDisplayMode(currMonitor);
+       // Gdx.graphics.setWindowedMode(displayMode.width, displayMode.height);
+
+        mainWindow = ((Lwjgl3Graphics)Gdx.graphics).getWindow();
+        Pixmap pixmap16 = new Pixmap(Gdx.files.internal("editor/textures/ui/app-icon-16.png"));
+        Pixmap pixmap32 = new Pixmap(Gdx.files.internal("editor/textures/ui/app-icon-32.png"));
+        Pixmap pixmap128 = new Pixmap(Gdx.files.internal("editor/textures/ui/app-icon-128.png"));
+        mainWindow.setIcon(pixmap16, pixmap32);
+        // mainWindow.setPosition(0,0);
+      //  mainWindow.maximizeWindow();
+        Config.VIRTUAL_SCREEN_WIDTH = Gdx.graphics.getWidth();
+        Config.VIRTUAL_SCREEN_HEIGHT = Gdx.graphics.getHeight();
+    }
 
 	@Override
 	protected void createSkin() {

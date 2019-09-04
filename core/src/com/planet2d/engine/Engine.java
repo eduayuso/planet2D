@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.Json;
+import com.planet2d.editor.Editor;
 import com.planet2d.editor.config.Config;
 import com.planet2d.editor.screens.InitScreen;
 import com.planet2d.engine.actors.GameActor;
@@ -76,7 +77,8 @@ public abstract class Engine extends Game {
 		
 		Engine.unload();
 		Resources.clear();
-		Gdx.app.exit();
+		//Gdx.app.exit();
+        Editor.mainWindow.closeWindow();
 	}
 
 	private static void unload() {

@@ -15,7 +15,7 @@ public abstract class Layout extends com.badlogic.gdx.scenes.scene2d.Stage {
 	
 	public Layout(Screen screen) {
 		
-		super(new ScalingViewport(Scaling.fit, Screen.getWidth(), Screen.getHeight(), new OrthographicCamera()), screen.batch);
+		super(new ScalingViewport(Scaling.none, Screen.getWidth(), Screen.getHeight(), new OrthographicCamera()), screen.batch);
 		this.screen = screen;
 		this.init();
 	}
