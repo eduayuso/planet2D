@@ -49,7 +49,7 @@ public abstract class EditorPanel extends Group {
 		this.setName(Page.typeToString(type));
 		this.page = page;
 		int width = (int) (Screen.getWidth() * (1-this.page.getSplit()));
-		int height = (int) (Screen.getHeight()-Editor.window.mainToolBar.getHeight()-Editor.window.pagesTabs.getHeight());
+		int height = (int) (Screen.getHeight()- Editor.window.getMainToolBar().getHeight()- Editor.window.getPagesTabs().getHeight());
 		
 		this.backPanel = new Panel("panel-white", width, height);
 		this.frontPanel = new Panel("panel-gray", width*2, height);

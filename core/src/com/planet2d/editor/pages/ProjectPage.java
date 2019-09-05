@@ -95,8 +95,8 @@ public abstract class ProjectPage extends Page {
 		this.content.addListener(new CanvasListener());
 		
 		// Scroll pane
-		float barsHeight = Editor.window.mainToolBar.getHeight() + Editor.window.pagesTabs.getHeight() + Editor.currentPage.stateBar.getHeight();
-		float width = Editor.window.mainToolBar.getWidth() - 4;
+		float barsHeight = Editor.window.getMainToolBar().getHeight() + Editor.window.getPagesTabs().getHeight() + Editor.currentPage.stateBar.getHeight();
+		float width = Editor.window.getMainToolBar().getWidth() - 4;
 		float height = Screen.getHeight()-barsHeight-4;
 		this.scrollPane = new PageScroll(this.content, width, height);
 		this.scrollPane.container.setPosition(2, this.stateBar.getHeight());

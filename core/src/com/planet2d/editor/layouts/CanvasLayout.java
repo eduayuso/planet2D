@@ -1,6 +1,7 @@
 package com.planet2d.editor.layouts;
 
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.ObjectMap;
 import com.planet2d.editor.config.EditorTypes.PageType;
 import com.planet2d.editor.pages.Page;
 import com.planet2d.editor.pages.stageEditor.StagePage;
@@ -12,12 +13,12 @@ import com.planet2d.engine.screens.Screen;
 
 public class CanvasLayout extends Layout {
 	
-	public Array<Page> projectPages;
+	public ObjectMap<PageType, Page> projectPages;
 	
 	public CanvasLayout(Screen screen) {
 		
 		super(screen);
-		this.projectPages = new Array<Page>();
+		this.projectPages = new ObjectMap<>();
 	}
 
 	public Page createPage(PageType type) {
@@ -29,7 +30,7 @@ public class CanvasLayout extends Layout {
 		else if (type == PageType.TILEMAP_EDITOR) page = new TileMapPage();
 		
 		if (page != null) {
-			this.projectPages.add(page);
+			this.projectPages.put(type, page);
 			this.add(page);
 		}
 		

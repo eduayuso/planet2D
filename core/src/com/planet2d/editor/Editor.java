@@ -33,10 +33,14 @@ public class Editor extends Engine {
 		super.create();
 		this.createCursors();
 		this.createHistory();
+        this.configWindow();
+    }
+
+    private void configWindow() {
 
         Graphics.Monitor currMonitor = Gdx.graphics.getMonitor();
-       // Graphics.DisplayMode displayMode = Gdx.graphics.getDisplayMode(currMonitor);
-       // Gdx.graphics.setWindowedMode(displayMode.width, displayMode.height);
+        // Graphics.DisplayMode displayMode = Gdx.graphics.getDisplayMode(currMonitor);
+        // Gdx.graphics.setWindowedMode(displayMode.width, displayMode.height);
 
         mainWindow = ((Lwjgl3Graphics)Gdx.graphics).getWindow();
         Pixmap pixmap16 = new Pixmap(Gdx.files.internal("editor/textures/ui/app-icon-16.png"));
@@ -44,12 +48,12 @@ public class Editor extends Engine {
         Pixmap pixmap128 = new Pixmap(Gdx.files.internal("editor/textures/ui/app-icon-128.png"));
         mainWindow.setIcon(pixmap16, pixmap32);
         // mainWindow.setPosition(0,0);
-      //  mainWindow.maximizeWindow();
+        //  mainWindow.maximizeWindow();
         Config.VIRTUAL_SCREEN_WIDTH = Gdx.graphics.getWidth();
         Config.VIRTUAL_SCREEN_HEIGHT = Gdx.graphics.getHeight();
     }
 
-	@Override
+    @Override
 	protected void createSkin() {
 
 		Engine.skin = new Skin(Gdx.files.internal("editor/skin/metal-ui.json"));

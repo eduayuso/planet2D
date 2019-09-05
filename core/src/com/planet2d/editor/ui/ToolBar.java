@@ -1,5 +1,6 @@
 package com.planet2d.editor.ui;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
@@ -129,4 +130,11 @@ public class ToolBar extends Table {
 			}
 		});
 	}
+
+    public void resize() {
+
+	    float y = Screen.getHeight();
+        this.setPosition(0, y-this.getHeight());
+        this.setWidth(Screen.getWidth());
+    }
 }

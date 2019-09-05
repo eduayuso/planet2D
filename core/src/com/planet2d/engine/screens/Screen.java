@@ -42,7 +42,7 @@ public abstract class Screen implements com.badlogic.gdx.Screen {
 	
 	protected void createMainLayouts() {
 
-		this.layouts = new Array<Layout>();
+		this.layouts = new Array<>();
 		
 		// Canvas layout
 		Editor.canvas = new CanvasLayout(this);
@@ -141,12 +141,10 @@ public abstract class Screen implements com.badlogic.gdx.Screen {
 	@Override
 	public void resize(int width, int height) {
 
-	    Gdx.app.log("hola", width + " " + height);
-		
-		for (Layout layout: this.layouts) layout.getViewport().update(width, height, false);
+		for (Layout layout: this.layouts) layout.resize(width, height);
 
-		if (Editor.window != null && Editor.window.mainToolBar != null) {
-            Editor.window.mainToolBar.setSize(width, Editor.window.mainToolBar.getHeight());
+		if (Editor.window != null && Editor.window.getMainToolBar() != null) {
+           // Editor.window.getMainToolBar().setSize(width, Editor.window.getMainToolBar().getHeight());
         }
 	}
 	

@@ -1,5 +1,6 @@
 package com.planet2d.editor.pages;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.NinePatch;
@@ -76,8 +77,8 @@ public class PageTabs extends HorizontalGroup {
 		super.draw(batch, parentAlpha);
 		batch.setColor(color.r, color.g, color.b, color.a*parentAlpha);
 	}
-	
-	private class Tab extends Group {
+
+    private class Tab extends Group {
 		
 		private Page page;
 		private boolean selected;

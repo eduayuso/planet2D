@@ -30,6 +30,7 @@ object DesktopLauncher {
         config.addIcon("editor/textures/ui/app-icon-16.png", Files.FileType.Internal)*/
         config.setTitle("planet2D")
         config.setResizable(true)
+        //config.setDecorated(false)
         config.setWindowedMode(Config.VIRTUAL_SCREEN_WIDTH, Config.VIRTUAL_SCREEN_HEIGHT)
         Lwjgl3Application(Editor(), config)
     }

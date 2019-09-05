@@ -25,6 +25,6 @@ public class PagesPanel extends ItemsPanel {
 	@Override
 	public void buttonAction(ItemInfo info) {
 		
-		Editor.window.pagesTabs.addTab(info.type);
+		Editor.window.getPagesTabs().addTab(info.type);
 	}
 }
