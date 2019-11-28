@@ -1,0 +1,98 @@
+{
+"tree-58": {
+	"width": 769,
+	"height": 662.1775,
+	"branches": [
+		{
+			"name": "trunk",
+			"file": "trunk.png",
+			"x": 0,
+			"y": 0,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-08",
+			"file": "branch-08.png",
+			"x": 132.63672,
+			"y": 357.46948,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-07",
+			"file": "branch-07.png",
+			"x": 288.14746,
+			"y": 406.89917,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-06",
+			"file": "branch-06.png",
+			"x": 205.12793,
+			"y": 410.94556,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-05",
+			"file": "branch-05.png",
+			"x": 61.11914,
+			"y": 399.54883,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-03",
+			"file": "branch-03.png",
+			"x": 201.11914,
+			"y": 500.43506,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-02",
+			"file": "branch-02.png",
+			"x": 282.6748,
+			"y": 409.77344,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-09",
+			"file": "branch-09.png",
+			"x": 285.80957,
+			"y": 362.17163,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-01",
+			"file": "branch-01.png",
+			"x": 17.152344,
+			"y": 447.1775,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		},
+		{
+			"name": "branch-04",
+			"file": "branch-04.png",
+			"x": 71.41797,
+			"y": 448.1775,
+			"originX": 0,
+			"originY": 0,
+			"rotation": 0
+		}
+	]
+}
+}

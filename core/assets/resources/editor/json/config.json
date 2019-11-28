@@ -1,0 +1,12 @@
+{
+	projects: [
+	
+		{
+			id: "wm",
+			title: "Wonderous Marbles",
+			genre: "Action Platformer",
+			developer: "Jeviathor Games",
+			synopsys: "Juego de prueba en el que vas con tu prota pegando hostia limpia. Debes vencer al malo final."
+		}
+	]
+}

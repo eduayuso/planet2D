@@ -1,0 +1,295 @@
+{
+"forest": [
+	{
+		"name": "platform-normal",
+		"pattern": "2x2",
+		"physicsShape": "polygon",
+		"physicsPadding": "21-34-32-29",
+		"meshDeformation": "skew-stretch-stretch",
+		"tiles": [
+			{
+				"type": "CENTER",
+				"id": 1,
+				"file": "block-inner-01.png",
+				"offsetX": 0.22143555,
+				"offsetY": 0.07501221
+			},
+			{
+				"type": "CENTER",
+				"id": 2,
+				"file": "block-inner-02.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "CENTER",
+				"id": 3,
+				"file": "block-inner-03.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "BOTTOM",
+				"id": 1,
+				"file": "block-bottom-01.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "BOTTOM",
+				"id": 2,
+				"file": "block-bottom-02.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "BOTTOM",
+				"id": 3,
+				"file": "block-bottom-03.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "BOTTOM",
+				"id": 4,
+				"file": "block-bottom-04.png",
+				"offsetX": 0.3036499,
+				"offsetY": -0.030456543
+			},
+			{
+				"type": "CENTER",
+				"id": 4,
+				"file": "block-inner-04.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT",
+				"id": 1,
+				"file": "block-left-01.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT",
+				"id": 2,
+				"file": "block-left-02.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT",
+				"id": 3,
+				"file": "block-left-03.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT",
+				"id": 4,
+				"file": "block-left-04.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT",
+				"id": 1,
+				"file": "block-right-01.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT",
+				"id": 2,
+				"file": "block-right-02.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT",
+				"id": 3,
+				"file": "block-right-03.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT",
+				"id": 4,
+				"file": "block-right-04.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT_BOTTOM",
+				"id": 1,
+				"file": "block-bottom-left-01.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT_BOTTOM",
+				"id": 2,
+				"file": "block-bottom-left-02.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT_BOTTOM",
+				"id": 3,
+				"file": "block-bottom-left-03.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "LEFT_BOTTOM",
+				"id": 4,
+				"file": "block-bottom-left-04.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT_BOTTOM",
+				"id": 1,
+				"file": "block-bottom-right-01.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT_BOTTOM",
+				"id": 2,
+				"file": "block-bottom-right-02.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT_BOTTOM",
+				"id": 3,
+				"file": "block-bottom-right-03.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT_BOTTOM",
+				"id": 4,
+				"file": "block-bottom-right-04.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "TOP",
+				"id": 1,
+				"file": "block-up.png",
+				"offsetX": 0.17156982,
+				"offsetY": -38.901062
+			},
+			{
+				"type": "TOP",
+				"id": 2,
+				"file": "block-up.png",
+				"offsetX": 0,
+				"offsetY": -39
+			},
+			{
+				"type": "TOP",
+				"id": 4,
+				"file": "block-up.png",
+				"offsetX": 0,
+				"offsetY": -39
+			},
+			{
+				"type": "LEFT_TOP",
+				"id": 4,
+				"file": "block-up-left.png",
+				"offsetX": 0,
+				"offsetY": -42
+			},
+			{
+				"type": "LEFT_TOP",
+				"id": 3,
+				"file": "block-up-left.png",
+				"offsetX": 0,
+				"offsetY": -42
+			},
+			{
+				"type": "LEFT_TOP",
+				"id": 2,
+				"file": "block-up-left.png",
+				"offsetX": 0,
+				"offsetY": -42
+			},
+			{
+				"type": "LEFT_TOP",
+				"id": 1,
+				"file": "block-up-left.png",
+				"offsetX": 0,
+				"offsetY": -42
+			},
+			{
+				"type": "RIGHT_TOP",
+				"id": 4,
+				"file": "block-up-right.png",
+				"offsetX": 0,
+				"offsetY": -43
+			},
+			{
+				"type": "RIGHT_TOP",
+				"id": 3,
+				"file": "block-up-right.png",
+				"offsetX": 0,
+				"offsetY": -43
+			},
+			{
+				"type": "RIGHT_TOP",
+				"id": 2,
+				"file": "block-up-right.png",
+				"offsetX": 0,
+				"offsetY": -43
+			},
+			{
+				"type": "RIGHT_TOP",
+				"id": 1,
+				"file": "block-up-right.png",
+				"offsetX": 0,
+				"offsetY": -43
+			},
+			{
+				"type": "TOP",
+				"id": 3,
+				"file": "block-up.png",
+				"offsetX": 0,
+				"offsetY": -39
+			}
+		]
+	},
+	{
+		"name": "otra",
+		"pattern": "2x1",
+		"physicsShape": "polygon",
+		"physicsPadding": "0-0-0-0",
+		"meshDeformation": "stretch-stretch-stretch",
+		"tiles": [
+			{
+				"type": "CENTER",
+				"id": 1,
+				"file": "block-inner-01.png",
+				"offsetX": 0,
+				"offsetY": 0
+			},
+			{
+				"type": "RIGHT_BOTTOM",
+				"id": 2,
+				"file": "block-bottom-right-02.png",
+				"offsetX": 9.345642,
+				"offsetY": -6.036804
+			},
+			{
+				"type": "CENTER",
+				"id": 2,
+				"file": "block-inner-02.png",
+				"offsetX": 0,
+				"offsetY": 0
+			}
+		]
+	}
+]
+}
